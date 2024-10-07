@@ -1,19 +1,35 @@
-package ie.atu.week4;
+//Dónal Ó Maoilchiaráin
+//student app
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
+
+package ie.atu.week4;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+      /*  Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter name ");
+        String studentName = sc.nextLine();
+        System.out.println("Please enter email ");
+        String studentEmail = sc.nextLine();
+        System.out.println("Please enter Course");
+        String studentCourse = sc.nextLine();*/
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Student s = new Student(); // default constructor
+        s.setName("tom");
+        s.setEmail("tom@atu.ie");
+        s.setCourse("arts");
+        System.out.println( s.toString());
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Student p = new Student("joe"); // name constructor
+        p.setEmail("Joe@atu.ie");
+        p.setCourse("Law");
+        System.out.println( p.toString());
+
+        Student e = new Student("eve", "eve@atu.ie", "civil");
+        System.out.println(e.toString());
+
+
     }
 }
