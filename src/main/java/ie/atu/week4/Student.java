@@ -47,9 +47,9 @@ public class Student {
           this.course = course;
      }
 
-     @Override
-     public String toString() { // overriding to get string
-          return "Student details are " +
+
+     public String toString(int number) { //  int argument to add number to output
+          return "Student " + number  + " details are " +
                   "name='" + name + '\'' +
                   ", email='" + email + '\'' +
                   ", course='" + course + '\'' ;
